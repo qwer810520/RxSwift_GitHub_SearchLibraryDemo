@@ -27,7 +27,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*
+        
         //查詢條件輸入
         let searchAction = searchBar.rx.text.orEmpty
             .throttle(0.5, scheduler: MainScheduler.instance)
@@ -72,8 +72,8 @@ class ViewController: UIViewController {
             .map { !$0.items.isEmpty }
             .bind(to: view.rx.endEditing)
             .disposed(by: rx.disposeBag)
-         */
         
+        /*
         //查詢條件輸入
         let searchAction = searchBar.rx.text.orEmpty
             .asDriver()
@@ -103,6 +103,7 @@ class ViewController: UIViewController {
                 self?.showAlert(title: $0.fullName, message: $0.description)
             })
             .disposed(by: rx.disposeBag)
+        */
         
     }
     
